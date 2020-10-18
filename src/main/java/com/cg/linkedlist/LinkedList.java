@@ -59,6 +59,17 @@ public class LinkedList<T> {
 
     }
 
+    public boolean search(T value){
+        MyNode node = head;
+        while(node != null){
+            if(node.getData() == value){
+                return true;
+            }
+            node = node.getNext();
+        }
+        return false;
+    }
+
     public void show(){
         MyNode node = head;
         while(node.next != null){
