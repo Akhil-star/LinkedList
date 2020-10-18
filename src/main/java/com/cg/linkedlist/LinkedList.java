@@ -1,6 +1,6 @@
 package com.cg.linkedlist;
 
-public class LinkedList<T> {
+public class LinkedList<T extends Comparable<T>> {
 
     MyNode head;
     MyNode tail = null;

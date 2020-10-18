@@ -1,6 +1,6 @@
 package com.cg.linkedlist;
 
-public class MyNode<T>  {
+public class MyNode<T extends Comparable<T>>  {
 
      T data;
      MyNode next;
