@@ -14,4 +14,17 @@ public class LinkedListTest {
         list.show();
         Assert.assertTrue(list.search( 30 ));
     }
+    @Test
+    public void testDeleteValue()
+    {
+        LinkedList list=new LinkedList();
+        list.append(56);
+        list.append(30);
+        list.append(40);
+        list.append(70);
+        list.deleteAtPosition( 3,40 );
+        list.show();
+        list.length();
+        Assert.assertEquals( 3, list.length());
+    }
 }

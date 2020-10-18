@@ -78,11 +78,37 @@ public class LinkedList<T> {
               if (node.getData() == data) {
                   newNode.setNext( node.getNext() );
                   node.setNext( newNode.getNext() );
-                  break;
               }
+              tail = node;
+              node = node.getNext();
           }
     }
 
+    public void deleteAtPosition(int index,T data){
+        MyNode previous = head;
+        int count =1;
+        while(count < index-1){
+            previous = previous.next;
+            count++;
+        }
+        MyNode current = previous.next;
+        previous.next = current.next;
+        current.next = null;
+    }
+
+    public int length(){
+        MyNode node =head;
+        if(head == null){
+            return 0;
+        }
+        int count =0;
+        MyNode current = head;
+        while(current != null){
+            count++;
+            current=current.next;
+        }
+        return count;
+    }
 
     public void show(){
         MyNode node = head;
