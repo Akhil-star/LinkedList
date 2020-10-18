@@ -3,6 +3,7 @@ package com.cg.linkedlist;
 public class LinkedList<T> {
 
     MyNode head;
+    MyNode tail = null;
 
     public void add(T data){
         MyNode node = new MyNode(data);
@@ -69,6 +70,19 @@ public class LinkedList<T> {
         }
         return false;
     }
+    public void insertAfterElement(T data,T value){
+          MyNode newNode = new MyNode( value );
+          //MyNode previous = new MyNode( data );
+          MyNode node = head;
+          while(node.next!= null) {
+              if (node.getData() == data) {
+                  newNode.setNext( node.getNext() );
+                  node.setNext( newNode.getNext() );
+                  break;
+              }
+          }
+    }
+
 
     public void show(){
         MyNode node = head;
