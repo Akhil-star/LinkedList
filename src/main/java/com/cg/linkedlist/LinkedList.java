@@ -4,7 +4,6 @@ public class LinkedList<T> {
 
     MyNode head;
 
-    
     public void add(T data){
         MyNode node = new MyNode(data);
         node.data = data;
@@ -12,6 +11,22 @@ public class LinkedList<T> {
         node.next=head;
         head = node;
 
+    }
+
+    public void append(T data){
+        MyNode node = new MyNode(data);
+        node.data = data;
+        node.next = null;
+
+        if(head == null){
+            head = node;
+        }else{
+            MyNode n = head;
+            while(n.next != null){
+                n = n.next;
+            }
+            n.next = node;
+        }
     }
 
     public void show(){
