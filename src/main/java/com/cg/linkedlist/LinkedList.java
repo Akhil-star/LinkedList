@@ -47,7 +47,18 @@ public class LinkedList<T> {
     public void pop(){
         head = head.getNext();
     }
-    
+
+    public void popLast(){
+        MyNode last =head;
+        MyNode previousTolast = null;
+        while(last.next != null){
+            previousTolast = last;
+            last = last.next;
+        }
+        previousTolast.next = null;
+
+    }
+
     public void show(){
         MyNode node = head;
         while(node.next != null){
