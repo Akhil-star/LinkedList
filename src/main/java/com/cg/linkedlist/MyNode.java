@@ -1,9 +1,9 @@
 package com.cg.linkedlist;
 
-public class MyNode<T> {
+public class MyNode<T>  {
 
-    private T data;
-    private MyNode next;
+     T data;
+     MyNode next;
 
     public MyNode(T data){
         this.data=null;
@@ -17,4 +17,13 @@ public class MyNode<T> {
     public void setNext(MyNode next) {
         this.next = next;
     }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData() {
+       this.data=data;
+    }
+
 }
