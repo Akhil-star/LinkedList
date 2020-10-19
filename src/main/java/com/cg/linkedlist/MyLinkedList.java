@@ -1,6 +1,6 @@
 package com.cg.linkedlist;
 
-public class MyLinkedList<K extends Comparable<K>> {
+public class MyLinkedList<K> {
 
     public INode<K> head;
     public INode<K> tail;
