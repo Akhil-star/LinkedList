@@ -15,4 +15,16 @@ public class MyStack {
     public INode peak(){
         return myLinkedlist.head;
     }
+
+    public INode pop(){
+           return myLinkedlist.pop();
+        }
+
+    public boolean isEmpty(){
+        int length = myLinkedlist.length();
+        if(length == 0){
+            return true;
+        }else
+            return false;
+    }
 }

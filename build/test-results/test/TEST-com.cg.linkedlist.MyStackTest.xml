@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.linkedlist.MyStackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-19T15:41:52" hostname="DESKTOP-AURK5V2" time="0.009">
+<testsuite name="com.cg.linkedlist.MyStackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-19T16:07:33" hostname="DESKTOP-AURK5V2" time="0.016">
   <properties/>
-  <testcase name="given3NumbersWhengivenToStackShouldBeAddedTop" classname="com.cg.linkedlist.MyStackTest" time="0.009"/>
-  <system-out><![CDATA[My Nodes: MyNode{Key = 56 }->MyNode{Key = 30 }->MyNode{Key = 70 }
+  <testcase name="given3NumbersWhenPopedToStackShouldMatchAddedNode" classname="com.cg.linkedlist.MyStackTest" time="0.016"/>
+  <system-out><![CDATA[My Nodes: MyNode{Key = 30 }->MyNode{Key = 70 }
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
