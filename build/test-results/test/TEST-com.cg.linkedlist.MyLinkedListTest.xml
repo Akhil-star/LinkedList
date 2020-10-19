@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.linkedlist.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-19T12:38:31" hostname="DESKTOP-AURK5V2" time="0.013">
+<testsuite name="com.cg.linkedlist.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-19T12:47:17" hostname="DESKTOP-AURK5V2" time="0.013">
   <properties/>
-  <testcase name="givenNumberShoudBeInsertedToLinkedList" classname="com.cg.linkedlist.MyLinkedListTest" time="0.013"/>
-  <system-out><![CDATA[LinkedListNodes{MyNode{Key = 56 }->MyNode{Key = 30 }->MyNode{Key = 70 }}
+  <testcase name="givenFirstElementWhenDeletedShouldPassLinkedListResult" classname="com.cg.linkedlist.MyLinkedListTest" time="0.013"/>
+  <system-out><![CDATA[LinkedListNodes{MyNode{Key = 30 }->MyNode{Key = 70 }}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
