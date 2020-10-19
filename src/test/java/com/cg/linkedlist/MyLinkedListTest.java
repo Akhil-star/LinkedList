@@ -102,4 +102,24 @@ public class MyLinkedListTest {
         System.out.println(myLinkedList);
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void givenNumberShoudBeInsertedAfterASpecifedNodeToLinkedList(){
+        MyNode<Integer> myFirstNode = new MyNode(56);
+        MyNode<Integer> mySecondNode = new MyNode(30);
+        MyNode<Integer> myThirdNode = new MyNode(70);
+        MyLinkedList<Integer> myLinkedList = new MyLinkedList();
+        myLinkedList.append(myFirstNode);
+        myLinkedList.append(mySecondNode);
+        myLinkedList.append(myThirdNode);
+        MyNode<Integer> newNode = new MyNode<>( 40 );
+        myLinkedList.insert( mySecondNode, newNode);
+        boolean result = myLinkedList.head.equals(myFirstNode) &&
+                myLinkedList.head.getNext().equals(mySecondNode)&&
+                myLinkedList.head.getNext().getNext().equals(newNode)&&
+                myLinkedList.tail.equals( myThirdNode );
+        System.out.println(myLinkedList);
+        Assert.assertTrue(result);
+
+    }
 }
