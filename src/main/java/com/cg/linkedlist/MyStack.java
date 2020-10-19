@@ -1,6 +1,6 @@
 package com.cg.linkedlist;
 
-public class MyStack {
+public class MyStack<K> {
     private final MyLinkedList myLinkedlist;
 
     public MyStack(){

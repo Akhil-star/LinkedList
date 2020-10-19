@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cg.linkedlist.MyQueueTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-19T17:16:34" hostname="DESKTOP-AURK5V2" time="0.011">
+  <properties/>
+  <testcase name="given3nosStackBeAddedQueue" classname="com.cg.linkedlist.MyQueueTest" time="0.011"/>
+  <system-out><![CDATA[My Nodes: MyNode{Key = 56 }->MyNode{Key = 30 }->MyNode{Key = 70 }
+My Nodes: MyNode{Key = 30 }->MyNode{Key = 70 }
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
