@@ -34,6 +34,12 @@ public class MyLinkedList<K> {
         }
     }
 
+    public void insert(INode previousNode , INode newNode){
+        INode tempNode = previousNode.getNext();
+        previousNode.setNext(newNode);
+        newNode.setNext(tempNode);
+    }
+
     public void printMyNodes(){
         System.out.println("My Nodes: "+head);
     }
@@ -43,3 +49,21 @@ public class MyLinkedList<K> {
         return "LinkedListNodes{" + head + '}';
     }
 }
+
+
+
+/*If you know the index at which node as to be inserted
+        public void insertAt(int index,K data){
+        MyNode node = new MyNode(data);
+        node.data = data;
+        node.next = null;
+        if(index == 0){
+            append( data );
+        }
+        MyNode n = head;
+        for(int i=0;i<index-1;i++){
+            n = n.next;
+        }
+        node.next = n.next;
+        n.next=node;
+    }*/

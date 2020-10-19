@@ -38,4 +38,21 @@ public class MyLinkedListTest {
 
     }
 
+    @Test
+    public void givenNumberShoudBeInsertedToLinkedList(){
+        MyNode<Integer> myFirstNode = new MyNode(56);
+        MyNode<Integer> mySecondNode = new MyNode(70);
+        MyLinkedList<Integer> myLinkedList = new MyLinkedList();
+        myLinkedList.append(myFirstNode);
+        myLinkedList.append(mySecondNode);
+        MyNode<Integer> newNode = new MyNode(30);
+        myLinkedList.insert( myFirstNode, newNode);
+        boolean result = myLinkedList.head.equals(myFirstNode) &&
+                myLinkedList.head.getNext().equals(newNode)&&
+                myLinkedList.tail.equals( mySecondNode );
+        System.out.println(myLinkedList);
+        Assert.assertTrue(result);
+
+    }
+
 }
