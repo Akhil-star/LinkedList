@@ -57,6 +57,28 @@ public class MyLinkedList<K> {
 
     }
 
+    public INode<K> search(K key) {
+        INode<K> tempNode = head;
+        while (tempNode != null && tempNode.getNext() != null) {
+            if (tempNode.getKey().equals(key)) {
+                return tempNode;
+            }
+            tempNode = tempNode.getNext();
+        }
+        return null;
+    }
+
+    public void printLinkedList() {
+        INode node = head;
+        while (node != null) {
+            System.out.print(node);
+            if (node != tail) {
+                System.out.print(" -> ");
+            }
+            node = node.getNext();
+        }
+    }
+
     public void printMyNodes(){
         System.out.println("My Nodes: "+head);
     }
