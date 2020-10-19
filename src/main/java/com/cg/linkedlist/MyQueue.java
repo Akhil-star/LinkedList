@@ -9,8 +9,8 @@ public class MyQueue<K> {
     public void enqueue(K key){
         myLinkedList.append(new MyNode(key));
     }
-    public void dequeue(){
-        myLinkedList.pop().getKey();
+    public K dequeue(){
+        return (K) myLinkedList.pop().getKey();
     }
 
     public void printQueue(){

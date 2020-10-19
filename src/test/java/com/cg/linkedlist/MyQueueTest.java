@@ -12,6 +12,6 @@ public class MyQueueTest {
             myQueue.enqueue(30);
             myQueue.enqueue(70);
             myQueue.printQueue();
-            
+            Assert.assertEquals(56,myQueue.dequeue());
         }
     }
