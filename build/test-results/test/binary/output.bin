@@ -1,1 +1,1 @@
-]LinkedListNodes{MyNode{Key = 56 }->MyNode{Key = 30 }->MyNode{Key = 40 }->MyNode{Key = 70 }}
+JLinkedListNodes{MyNode{Key = 56 }->MyNode{Key = 30 }->MyNode{Key = 70 }}

@@ -52,9 +52,9 @@ public class MyLinkedList<K> {
         while(last.getNext() != null){
             previousTolast = last;
             last = last.getNext();
+
         }
         previousTolast.setNext( null );
-
     }
 
     public INode<K> search(K key) {
@@ -66,6 +66,31 @@ public class MyLinkedList<K> {
             tempNode = tempNode.getNext();
         }
         return null;
+    }
+
+    public boolean delete(K key) {
+        if(search(key) == null)
+            return false;
+        INode tempNode = head;
+        while (tempNode.getNext().getKey() != key) {
+            tempNode = tempNode.getNext();
+        }
+        tempNode.setNext(tempNode.getNext().getNext());;
+        return true;
+    }
+
+    public int length(){
+        INode node =head;
+        if(head == null){
+            return 0;
+        }
+        int count =0;
+        INode current = head;
+        while(current != null){
+            count++;
+            current = current.getNext();
+        }
+        return count;
     }
 
     public void printLinkedList() {
