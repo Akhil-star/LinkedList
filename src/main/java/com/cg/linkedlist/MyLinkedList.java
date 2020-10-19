@@ -46,6 +46,17 @@ public class MyLinkedList<K> {
         return tempNode;
     }
 
+    public void popLast(){
+        INode last =head;
+        INode previousTolast = null;
+        while(last.getNext() != null){
+            previousTolast = last;
+            last = last.getNext();
+        }
+        previousTolast.setNext( null );
+
+    }
+
     public void printMyNodes(){
         System.out.println("My Nodes: "+head);
     }
