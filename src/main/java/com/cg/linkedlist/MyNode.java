@@ -1,20 +1,39 @@
 package com.cg.linkedlist;
 
-public class MyNode<T> {
+public class MyNode<K> implements INode<K>{
 
-    private T data;
-    private MyNode next;
+    private K key;
+    private INode<K> next;
 
-    public MyNode(T data){
-        this.data=null;
+    public MyNode(K key){
+        this.key=key;
         this.next=null;
     }
 
-    public MyNode getNext() {
+    @Override
+    public K getKey() {
+        return key;
+    }
+
+    @Override
+    public void setKey(K key) {
+        this.key = key;
+    }
+
+    public INode<K> getNext() {
         return next;
     }
 
-    public void setNext(MyNode next) {
-        this.next = next;
+    public void setNext(INode<K> next) {
+        this.next = (MyNode<K>)next;
+    }
+
+    @Override
+    public String toString(){
+        StringBuilder myNodeString = new StringBuilder();
+        myNodeString.append("MyNode{" + "Key = ").append(key).append(" }");
+        if(next!=null)
+            myNodeString.append("->").append( next );
+        return myNodeString.toString();
     }
 }
