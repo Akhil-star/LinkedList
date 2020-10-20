@@ -6,9 +6,11 @@ public class MyQueue<K> {
     public MyQueue(){
         this.myLinkedList = new MyLinkedList();
     }
+
     public void enqueue(K key){
         myLinkedList.append(new MyNode(key));
     }
+
     public K dequeue(){
         return (K) myLinkedList.pop().getKey();
     }

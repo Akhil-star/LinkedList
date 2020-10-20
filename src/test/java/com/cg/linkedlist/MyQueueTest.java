@@ -6,7 +6,7 @@ import org.junit.Test;
 public class MyQueueTest {
 
         @Test
-        public void given3nosStackBeAddedQueue() {
+        public void given3NumberswWhenEnqueueToQueueShouldhaveAdddedToTop() {
             MyQueue myQueue = new MyQueue();
             myQueue.enqueue(56);
             myQueue.enqueue(30);
